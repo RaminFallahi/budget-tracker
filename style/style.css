@@ -4,9 +4,11 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
 body {
   background-color: #f7f9fd;
 }
+
 .wrapper {
   width: 90%;
   font-size: 16px;
@@ -16,6 +18,7 @@ body {
 .container {
   width: 100%;
 }
+
 .sub-container {
   width: 100%;
   display: grid;

@@ -25,10 +25,9 @@ const list = document.getElementById("list");
 //13-Variable to store temporary amount
 let tempAmount = 0;
 
-
 //14-Set Budget Part
 totalAmountButton.addEventListener("click", () => {
-  totalAmount = totalAmount.nodeValue;
+  tempAmount = totalAmount.value; 
   if (tempAmount === "" || tempAmount < 0) {
     errorMessage.classList.remove("hide");
   } else {
@@ -40,7 +39,39 @@ totalAmountButton.addEventListener("click", () => {
     //Clear Input Box
     totalAmount.value = "";
   }
+});
+
+//15-Function To Disable Edit and Delete Button
+
+//16-//Function To Modify List Elements
+
+//17 -//Function To Create List
+
+//18- //Function To Add Expenses
+checkAmountButton.addEventListener("click", () => {
+  //empty checks
+  if (!userAmount.value || !product-title.value) {
+    productTitleError.classList.remove("hide");
+    return false;
+  }
+  //19-Enable buttons
+  disableButtons (false);
+  //20-Expense
+  let expenditure = parseInt(userAmount.value);
+  //21-Total expense (existing + new)
+  let sum = parseInt(expenditureValue.innerText) + expenditure;
+  // expenditureValue.innerText = sum; //purposely commented
+
+  //22-Total balance(budget - total expense)
+  const totalBalance = sum - tempAmount;
+  totalBalance = balanceValue.innerText;
+
+  //23-Create list
+  
+
+
+
+
+
+
 })
- 
-
-
